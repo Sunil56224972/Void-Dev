@@ -1064,31 +1064,6 @@ body {
 .p-top-about__info-item:first-child {
   color:#fef0d5;
   background-color:#0048ae;
-  overflow:hidden;
-}
-
-.p-top-about__info-item p {
-  z-index:2;
-}
-
-.p-top-about__info-art {
-  width:calc(100% - 180px);
-  height:calc(100% - 8px);
-  object-fit:contain;
-  object-position:center bottom;
-  pointer-events:none;
-  z-index:1;
-  position:absolute;
-  top:8px;
-  bottom:0;
-  left:36px;
-}
-
-@media (width>=1024px) {
-  .p-top-about__info-art {
-    width:calc(100% - 260px);
-    left:48px;
-  }
 }
 
 .p-top-about__info-item:last-child {

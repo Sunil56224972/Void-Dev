@@ -21,7 +21,6 @@ const PRELOADED_ASSETS = {
   '/assets/img/project-02.png': fs.readFileSync(path.join(__dirname, 'assets/img/project-02.png')),
   '/assets/img/project-03.png': fs.readFileSync(path.join(__dirname, 'assets/img/project-03.png')),
   '/assets/img/project-04.png': fs.readFileSync(path.join(__dirname, 'assets/img/project-04.png')),
-  '/assets/img/void-dev-manga.png': fs.readFileSync(path.join(__dirname, 'assets/img/void-dev-manga.png')),
   '/assets/img/preview-hero.png': fs.readFileSync(path.join(__dirname, 'assets/img/preview-hero.png')),
   '/assets/img/preview-about.png': fs.readFileSync(path.join(__dirname, 'assets/img/preview-about.png')),
   '/assets/img/preview-projects.png': fs.readFileSync(path.join(__dirname, 'assets/img/preview-projects.png'))
