@@ -1140,6 +1140,31 @@ body {
   display:flex;
 }
 
+.p-top-about__services-item .srv-word-wrap {
+  overflow:hidden;
+  vertical-align:bottom;
+  display:inline-block;
+}
+
+.p-top-about__services-item .srv-word {
+  will-change:transform,opacity;
+  display:inline-block;
+}
+
+.p-top-about__services-item > p.anton .text-wrapper,
+.p-top-about__info-item p.anton .text-wrapper {
+  overflow:hidden;
+  justify-content:flex-end;
+  line-height:1.08;
+  display:inline-flex;
+}
+
+.p-top-about__services-item > p.anton .text-wrapper span,
+.p-top-about__info-item p.anton .text-wrapper span {
+  will-change:transform;
+  display:inline-block;
+}
+
 .p-top-projects__wrapper {
   padding-bottom:120px;
 }
