@@ -39,13 +39,13 @@ const MIME_TYPES = {
   '.json': 'application/json'
 };
 
-const server = http.createServer((req, res) => {
+function requestHandler(req, res) {
   const rawUrl = decodeURIComponent((req.url || '/').split('?')[0]);
   const normalizedUrl = rawUrl === '/' ? '/index.html' : '/' + rawUrl.replace(/^\/+/, '');
   const ext = path.extname(normalizedUrl).toLowerCase();
 
-  // Serve from preloaded bundle if available (guarantees Vercel Serverless availability)
-  if (PRELOADED_ASSETS[normalizedUrl] && process.env.VERCEL) {
+  // Serve directly from preloaded bundle on Vercel Serverless or when cached
+  if (PRELOADED_ASSETS[normalizedUrl]) {
     res.writeHead(200, {
       'Content-Type': MIME_TYPES[ext] || 'application/octet-stream',
       'Cache-Control': 'public, max-age=0, must-revalidate'
@@ -61,13 +61,6 @@ const server = http.createServer((req, res) => {
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
-      if (PRELOADED_ASSETS[normalizedUrl]) {
-        res.writeHead(200, {
-          'Content-Type': MIME_TYPES[ext] || 'application/octet-stream',
-          'Cache-Control': 'public, max-age=0, must-revalidate'
-        });
-        return res.end(PRELOADED_ASSETS[normalizedUrl]);
-      }
       res.writeHead(404);
       return res.end('Not found');
     }
@@ -77,7 +70,9 @@ const server = http.createServer((req, res) => {
     });
     res.end(data);
   });
-});
+}
+
+const server = http.createServer(requestHandler);
 
 server.listen(PORT, () => {
   const url = `http://localhost:${PORT}`;
@@ -86,5 +81,3 @@ server.listen(PORT, () => {
     exec(`start "" "${url}"`);
   }
 });
-
-module.exports = server;
