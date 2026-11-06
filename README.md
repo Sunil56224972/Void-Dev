@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ VOID DEV
+#  VOID DEV
 
 ### Freelance Web, Mobile App & Custom Software Development Studio
 
