@@ -4,9 +4,9 @@
 
 ### Freelance Web, Mobile App & Custom Software Development Studio
 
+[![Live Demo](https://img.shields.io/badge/Live%20Website-void--dev.vercel.app-0048AE?style=for-the-badge&logo=vercel)](https://void-dev.vercel.app)
 [![Founder](https://img.shields.io/badge/Founder-Sunil%20(@Sunil56224972)-0048AE?style=for-the-badge&logo=github)](https://github.com/Sunil56224972)
 [![Contact](https://img.shields.io/badge/Email-sunil56224972%40gmail.com-FEF0D5?style=for-the-badge&logo=gmail&logoColor=0048AE)](mailto:sunil56224972@gmail.com)
-[![Status](https://img.shields.io/badge/Available%20For-Client%20Projects-0048AE?style=for-the-badge)](#contact)
 
 **Building high-performance websites, mobile applications, and custom software for ambitious clients worldwide.**
 
