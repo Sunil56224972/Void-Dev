@@ -1,0 +1,28 @@
+{
+  "name": "void-dev",
+  "version": "1.0.0",
+  "description": "VOID DEV — Freelance Web, Mobile App & Custom Software Development Studio founded by Sunil & Prashank.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunil56224972/Void-Dev.git"
+  },
+  "keywords": [
+    "void-dev",
+    "freelance-studio",
+    "web-development",
+    "mobile-apps",
+    "custom-software",
+    "gsap",
+    "lenis",
+    "portfolio",
+    "threejs",
+    "saas"
+  ],
+  "author": "Sunil (@Sunil56224972) & Prashank",
+  "license": "MIT"
+}
